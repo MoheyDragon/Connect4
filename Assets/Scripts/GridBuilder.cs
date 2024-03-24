@@ -1,15 +1,14 @@
 using UnityEngine;
 using UnityEngine.UI;
-public class GridManager : MonoBehaviour
+public class GridBuilder : MonoBehaviour
 {
     [SerializeField] GridLayoutGroup gridLayout;
-    [SerializeField] EmptyCell prefab; 
-    [SerializeField] int rows, coulmns;
+    [SerializeField] Cell prefab; 
+    [SerializeField] int rows, columns;
     void Start()
     {
         GenerateGrid();
     }
-    public int totalCellsCount;
     public void GenerateGrid()
     {
         if (gridLayout.transform.childCount>0)
@@ -20,15 +19,17 @@ public class GridManager : MonoBehaviour
             }
         }
         gridLayout.constraintCount = rows;
-        totalCellsCount = rows * coulmns;
+        Cell[,] cells = new Cell[columns,rows];
         for (int i = 0; i < rows; i++)
+    {
+        for (int j = 0; j < columns; j++)
         {
-            for (int j = 0; j < coulmns; j++)
-            {
-                EmptyCell newCell= Instantiate(prefab, gridLayout.transform);
-                newCell.AssignCoordinates(i, j);
-            }
+            Cell newCell = Instantiate(prefab, gridLayout.transform);
+            cells[j, i] = newCell;
+            newCell.AssignCoordinates(j, i);
         }
+    }
+        CellsOccupancyManager.Singleton.SetCellsData(cells,rows,columns);
     }
     void Update()
     {
