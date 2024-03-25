@@ -8,7 +8,7 @@
 						<Sound Name="Draw" ID="{CE3CC947-4902-4A1D-A385-36C1E7033E82}" ShortID="349528613">
 							<ReferenceList>
 								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48E5FE79-BD44-47F4-BD34-7D577621C078}"/>
+									<ObjectRef Name="Optmized" ID="{74926BBB-15DC-41F5-81E5-ED9D4A40F992}" WorkUnitID="{48E5FE79-BD44-47F4-BD34-7D577621C078}"/>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="SFX" ID="{3F7B7AC2-3497-4B52-82E1-1DDD8C167526}" WorkUnitID="{62B365BE-9B0F-4FD9-87F1-60AA5E432FB7}"/>
@@ -84,11 +84,6 @@
 											</Modifier>
 										</ModifierInfo>
 									</ModifierList>
-								</Property>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-7</Value>
-									</ValueList>
 								</Property>
 							</PropertyList>
 							<ReferenceList>
@@ -204,11 +199,6 @@
 											</Modifier>
 										</ModifierInfo>
 									</ModifierList>
-								</Property>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-7</Value>
-									</ValueList>
 								</Property>
 							</PropertyList>
 							<ReferenceList>
@@ -438,7 +428,7 @@
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48E5FE79-BD44-47F4-BD34-7D577621C078}"/>
+							<ObjectRef Name="Optmized" ID="{74926BBB-15DC-41F5-81E5-ED9D4A40F992}" WorkUnitID="{48E5FE79-BD44-47F4-BD34-7D577621C078}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="SFX" ID="{3F7B7AC2-3497-4B52-82E1-1DDD8C167526}" WorkUnitID="{62B365BE-9B0F-4FD9-87F1-60AA5E432FB7}"/>

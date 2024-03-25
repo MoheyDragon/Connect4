@@ -6,21 +6,21 @@ Event	ID	Name			Wwise Object Path	Notes
 	3991942870	Music			\Default Work Unit\Music	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	25363277	Insert	C:\UnityProjects\Tests\Connect4\Connect4_WwiseProject\.cache\Windows\SFX\Sounds\Insert_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerPutDisk\InsertDisk\Insert		117168
-	54395538	Drop (2)	C:\UnityProjects\Tests\Connect4\Connect4_WwiseProject\.cache\Windows\SFX\Sounds\Drop (2)_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerPutDisk\DropDisk\Drop (2)		66172
-	82947770	Music2	C:\UnityProjects\Tests\Connect4\Connect4_WwiseProject\.cache\Windows\SFX\Sounds\Music2_2BBB9D92.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\Music2		14315332
-	153483752	Insert (2)	C:\UnityProjects\Tests\Connect4\Connect4_WwiseProject\.cache\Windows\SFX\Sounds\Insert (2)_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerPutDisk\InsertDisk\Insert (2)		66392
+	25363277	Insert	C:\UnityProjects\Tests\Connect4\Connect4_WwiseProject\.cache\Windows\SFX\Sounds\Insert_D1B7D816.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerPutDisk\InsertDisk\Insert		8890
+	54395538	Drop (2)	C:\UnityProjects\Tests\Connect4\Connect4_WwiseProject\.cache\Windows\SFX\Sounds\Drop (2)_D1B7D816.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerPutDisk\DropDisk\Drop (2)		3928
+	82947770	Music2	C:\UnityProjects\Tests\Connect4\Connect4_WwiseProject\.cache\Windows\SFX\Sounds\Music2_0E64E702.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\Music2		1057850
+	153483752	Insert (2)	C:\UnityProjects\Tests\Connect4\Connect4_WwiseProject\.cache\Windows\SFX\Sounds\Insert (2)_D1B7D816.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerPutDisk\InsertDisk\Insert (2)		6013
 	295848666	Error	C:\UnityProjects\Tests\Connect4\Connect4_WwiseProject\.cache\Windows\SFX\Sounds\Error_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Error\Error		30646
-	437481821	Win_SFX	C:\UnityProjects\Tests\Connect4\Connect4_WwiseProject\.cache\Windows\SFX\Sounds\Win_SFX_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\WinSFX\Win_SFX		168096
-	456478770	Win_Clapping	C:\UnityProjects\Tests\Connect4\Connect4_WwiseProject\.cache\Windows\SFX\Sounds\Win_Clapping_3F676873.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sounds\Win_Clapping		1139024
-	510737770	Drop (3)	C:\UnityProjects\Tests\Connect4\Connect4_WwiseProject\.cache\Windows\SFX\Sounds\Drop (3)_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerPutDisk\DropDisk\Drop (3)		70620
-	514100534	Insert (4)	C:\UnityProjects\Tests\Connect4\Connect4_WwiseProject\.cache\Windows\SFX\Sounds\Insert (4)_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerPutDisk\InsertDisk\Insert (4)		208292
-	515277792	Insert (1)	C:\UnityProjects\Tests\Connect4\Connect4_WwiseProject\.cache\Windows\SFX\Sounds\Insert (1)_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerPutDisk\InsertDisk\Insert (1)		74884
+	437481821	Win_SFX	C:\UnityProjects\Tests\Connect4\Connect4_WwiseProject\.cache\Windows\SFX\Sounds\Win_SFX_D1B7D816.wem		\Actor-Mixer Hierarchy\Default Work Unit\WinSFX\Win_SFX		17191
+	456478770	Win_Clapping	C:\UnityProjects\Tests\Connect4\Connect4_WwiseProject\.cache\Windows\SFX\Sounds\Win_Clapping_D8BB2D03.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sounds\Win_Clapping		140268
+	510737770	Drop (3)	C:\UnityProjects\Tests\Connect4\Connect4_WwiseProject\.cache\Windows\SFX\Sounds\Drop (3)_D1B7D816.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerPutDisk\DropDisk\Drop (3)		4120
+	514100534	Insert (4)	C:\UnityProjects\Tests\Connect4\Connect4_WwiseProject\.cache\Windows\SFX\Sounds\Insert (4)_D1B7D816.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerPutDisk\InsertDisk\Insert (4)		9247
+	515277792	Insert (1)	C:\UnityProjects\Tests\Connect4\Connect4_WwiseProject\.cache\Windows\SFX\Sounds\Insert (1)_D1B7D816.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerPutDisk\InsertDisk\Insert (1)		5501
 	542882969	Draw	C:\UnityProjects\Tests\Connect4\Connect4_WwiseProject\.cache\Windows\SFX\Sounds\Draw_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sounds\Draw		357788
-	639576867	Insert (3)	C:\UnityProjects\Tests\Connect4\Connect4_WwiseProject\.cache\Windows\SFX\Sounds\Insert (3)_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerPutDisk\InsertDisk\Insert (3)		254864
-	705131878	Music	C:\UnityProjects\Tests\Connect4\Connect4_WwiseProject\.cache\Windows\SFX\Sounds\Music_EAB7F5DF.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\Music		7903756
+	639576867	Insert (3)	C:\UnityProjects\Tests\Connect4\Connect4_WwiseProject\.cache\Windows\SFX\Sounds\Insert (3)_D1B7D816.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerPutDisk\InsertDisk\Insert (3)		14718
+	705131878	Music	C:\UnityProjects\Tests\Connect4\Connect4_WwiseProject\.cache\Windows\SFX\Sounds\Music_1BB0410F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\Music		545332
 	740849803	Error2	C:\UnityProjects\Tests\Connect4\Connect4_WwiseProject\.cache\Windows\SFX\Sounds\Error2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Error\Error2		37074
-	765399761	Win2	C:\UnityProjects\Tests\Connect4\Connect4_WwiseProject\.cache\Windows\SFX\Sounds\Win2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\WinSFX\Win2		686268
-	869710975	Drop (1)	C:\UnityProjects\Tests\Connect4\Connect4_WwiseProject\.cache\Windows\SFX\Sounds\Drop (1)_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerPutDisk\DropDisk\Drop (1)		51612
-	1007169872	Drop (4)	C:\UnityProjects\Tests\Connect4\Connect4_WwiseProject\.cache\Windows\SFX\Sounds\Drop (4)_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerPutDisk\DropDisk\Drop (4)		76188
+	765399761	Win2	C:\UnityProjects\Tests\Connect4\Connect4_WwiseProject\.cache\Windows\SFX\Sounds\Win2_D1B7D816.wem		\Actor-Mixer Hierarchy\Default Work Unit\WinSFX\Win2		39097
+	869710975	Drop (1)	C:\UnityProjects\Tests\Connect4\Connect4_WwiseProject\.cache\Windows\SFX\Sounds\Drop (1)_D1B7D816.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerPutDisk\DropDisk\Drop (1)		3321
+	1007169872	Drop (4)	C:\UnityProjects\Tests\Connect4\Connect4_WwiseProject\.cache\Windows\SFX\Sounds\Drop (4)_D1B7D816.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerPutDisk\DropDisk\Drop (4)		4503
 
