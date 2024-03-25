@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{C1239538-6A58-4F9A-BEEB-5B950146CC34}" SchemaVersion="119">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{C1239538-6A58-4F9A-BEEB-5B950146CC34}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Main" ID="{53A005DC-07C0-4C7B-980B-A95885F22700}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Draw" ID="{89C4B7A3-DB65-4472-9291-0FEB09A2D79B}" WorkUnitID="{2F14E15B-0B94-4F37-ABA7-648305EB1A05}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Win" ID="{3F8048F7-7A36-467B-970C-39EA21FCE16F}" WorkUnitID="{2F14E15B-0B94-4F37-ABA7-648305EB1A05}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="DiskDrop" ID="{6309B485-F042-4769-AA6E-3ECA794EFACC}" WorkUnitID="{2F14E15B-0B94-4F37-ABA7-648305EB1A05}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Music" ID="{23C6922B-22E3-49DA-A3A6-C8491C90A357}" WorkUnitID="{2F14E15B-0B94-4F37-ABA7-648305EB1A05}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="NotClickable" ID="{D82D3490-7842-4A65-B0AA-35B831FFEBF9}" WorkUnitID="{2F14E15B-0B94-4F37-ABA7-648305EB1A05}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

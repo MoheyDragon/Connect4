@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 public class CellsOccupancyManager : Singletons<CellsOccupancyManager>
 {
     Cell[,] cells;
@@ -9,40 +10,33 @@ public class CellsOccupancyManager : Singletons<CellsOccupancyManager>
         this.columns = columns;
         this.cells = cells;
         this.winningCount = winningCount;
-        totalGridCellsCount = rows * columns;
-        fillGridCounter = 0;
         isGameActive = true;
     }
     bool isGameActive;
+    public void ResumeGame() => isGameActive = true;
+    [SerializeField] AK.Wwise.Event notClickAbleSound;
     public void ClickingOnColumn(int columnIndex)
     {
-        if (!isGameActive) return;
-        int firstEmptyRow;
-        if (CheckIfColumnHasEmptyCells(columnIndex,out firstEmptyRow))
+        if (!isGameActive)
+        {
+            notClickAbleSound.Post(gameObject);
+            return;
+        }
+        if (CheckIfColumnHasEmptyCells(columnIndex,out int firstEmptyRow))
         {
             AddDiskToCell(columnIndex,firstEmptyRow);
         }
+        else
+            notClickAbleSound.Post(gameObject);
 
     }
-    int fillGridCounter, totalGridCellsCount;
-    private void AddDiskToCell(int x,int y)
+    private void AddDiskToCell(int x, int y)
     {
-        Player currentPlayer = TurnManager.Singleton.currentPlayer;
-        cells[x, y].InsertDisk(currentPlayer);
-        fillGridCounter++;
-        if (fillGridCounter == totalGridCellsCount)
-        {
-            TurnManager.Singleton.Draw();
-        }
-        else if (CheckWin(x, y, currentPlayer.Index))
-        {
-            isGameActive = false;
-            TurnManager.Singleton.PlayerWon();
-        }
-        else
-            TurnManager.Singleton.NextTurn();
+        isGameActive = false;
+        cells[x, y].InsertDisk(TurnManager.Singleton.currentPlayer);
+        DisksAnimator.Singleton.DropDiskAnimation(cells[x, y]);
     }
-    bool CheckIfColumnHasEmptyCells(int x, out int firstEmptyRow)
+    private bool CheckIfColumnHasEmptyCells(int x, out int firstEmptyRow)
     {
         for (int i = rows - 1; i > -1; i--)
         {
@@ -65,7 +59,7 @@ public class CellsOccupancyManager : Singletons<CellsOccupancyManager>
     {
         allowDiagonal = allow;
     }
-    private bool CheckWin(int x, int y, int playerIndex)
+    public bool CheckWin(int x, int y, int playerIndex)
     {
         int allowedDirections = allowDiagonal ? 4 : 2;
         for (int i = 0; i < allowedDirections; i++)
@@ -95,7 +89,7 @@ public class CellsOccupancyManager : Singletons<CellsOccupancyManager>
             int nx = x + i * dx;
             int ny = y + i * dy;
 
-            if (IsCellInGridBoundaries(nx, ny) && cells[nx, ny].HasSamePlayerIndex(playerIndex))
+            if (IsCoordinatesValid(nx, ny) && cells[nx, ny].HasSamePlayerIndex(playerIndex))
             {
                 count++;
             }
@@ -107,7 +101,7 @@ public class CellsOccupancyManager : Singletons<CellsOccupancyManager>
         return count;
     }
 
-    private bool IsCellInGridBoundaries(int x, int y)
+    private bool IsCoordinatesValid(int x, int y)
     {
         return x >= 0 && x < columns && y >= 0 && y < rows;
     }

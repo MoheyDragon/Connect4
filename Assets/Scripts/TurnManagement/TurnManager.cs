@@ -7,16 +7,36 @@ public class TurnManager : Singletons<TurnManager>
     public Player currentPlayer;
     [SerializeField] TextMeshProUGUI currentPlayerUi,ResultUi;
     const string startingText="-------";
-    private void Start()
-    {
-        ResetTurn();
-    }
-    public void ResetTurn()
+    int fillGridCounter;
+    int totalGridCellsCount;
+    [Space]
+    [SerializeField] AK.Wwise.Event drawSound;
+    [SerializeField] AK.Wwise.Event winSound;
+    public void ResetTurn(int cellsCount)
     {
         currentPlayer = players[0];
         ResultUi.text = startingText;
         ResultUi.color = Color.white;
+        totalGridCellsCount=cellsCount;
+        fillGridCounter = 0;
         UpdateCurrentPlayerUi();
+    }
+    public void ResultOfTurn(CellCoordinates cellCoordinates)
+    {
+        fillGridCounter++;
+        if (fillGridCounter == totalGridCellsCount)
+        {
+            Draw();
+        }
+        else if (CellsOccupancyManager.Singleton.CheckWin(cellCoordinates.x,cellCoordinates.y, currentPlayer.Index))
+        {
+            PlayerWon();
+        }
+        else
+        {
+            CellsOccupancyManager.Singleton.ResumeGame();
+            NextTurn();
+        }
     }
     public void NextTurn()
     {
@@ -26,20 +46,22 @@ public class TurnManager : Singletons<TurnManager>
             currentPlayer = players[0];
         UpdateCurrentPlayerUi();
     }
-    private void UpdateCurrentPlayerUi()
-    {
-        currentPlayerUi.color = currentPlayer.playerColor;
-        currentPlayerUi.text = currentPlayer.name+" Turn";
-    }
     public void PlayerWon()
     {
         ResultUi.color = currentPlayer.playerColor;
         ResultUi.text = currentPlayer.name+" Is The Winner";
+        winSound.Post(gameObject);
     }
     public void Draw()
     {
         ResultUi.text = "Draw";
         currentPlayerUi.color = Color.white;
         currentPlayerUi.text = startingText;
+        drawSound.Post(gameObject);
+    }
+    private void UpdateCurrentPlayerUi()
+    {
+        currentPlayerUi.color = currentPlayer.playerColor;
+        currentPlayerUi.text = currentPlayer.name+" Turn";
     }
 }

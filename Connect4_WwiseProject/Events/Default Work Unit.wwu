@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{2F14E15B-0B94-4F37-ABA7-648305EB1A05}" SchemaVersion="119">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{2F14E15B-0B94-4F37-ABA7-648305EB1A05}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="DiskDrop" ID="{6309B485-F042-4769-AA6E-3ECA794EFACC}">
+					<ChildrenList>
+						<Action Name="" ID="{B124B477-1247-4016-9A09-D948211498FB}" ShortID="892780847">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PlayerPutDisk" ID="{46F6DE92-F537-44EE-81A8-5F175A3F14A3}" WorkUnitID="{14049A96-9B61-4EDD-9BCF-807D07574AD8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Win" ID="{3F8048F7-7A36-467B-970C-39EA21FCE16F}">
+					<ChildrenList>
+						<Action Name="" ID="{BB422E83-ADBA-4396-B565-52AE59CE4FA8}" ShortID="669398246">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="WinSFX" ID="{EB053706-37EA-4BD1-8C1D-8D63D7E8089E}" WorkUnitID="{14049A96-9B61-4EDD-9BCF-807D07574AD8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{5F710977-D6B1-4551-9E9F-2AF5824DCA3E}" ShortID="544446203">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Win_Clapping" ID="{4F25249E-ECF7-4789-8CCF-ABD4D81013B8}" WorkUnitID="{14049A96-9B61-4EDD-9BCF-807D07574AD8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Draw" ID="{89C4B7A3-DB65-4472-9291-0FEB09A2D79B}">
+					<ChildrenList>
+						<Action Name="" ID="{3FC2A9AD-CF70-4C58-9DA7-5F910E7CBF5A}" ShortID="865119514">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Draw" ID="{CE3CC947-4902-4A1D-A385-36C1E7033E82}" WorkUnitID="{14049A96-9B61-4EDD-9BCF-807D07574AD8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="NotClickable" ID="{D82D3490-7842-4A65-B0AA-35B831FFEBF9}">
+					<ChildrenList>
+						<Action Name="" ID="{47C0E8FA-BFED-4F35-94EA-501310B896FC}" ShortID="1051466854">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Error" ID="{030FFCCD-DAA5-4456-9FE4-EEF4B784941E}" WorkUnitID="{14049A96-9B61-4EDD-9BCF-807D07574AD8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Music" ID="{23C6922B-22E3-49DA-A3A6-C8491C90A357}">
+					<ChildrenList>
+						<Action Name="" ID="{0D2A3CEA-D0E4-4F20-BABB-CC01E8D8C1F1}" ShortID="542472811">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music" ID="{BC21205C-416D-4729-BA6A-B93918DF5FA9}" WorkUnitID="{14049A96-9B61-4EDD-9BCF-807D07574AD8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

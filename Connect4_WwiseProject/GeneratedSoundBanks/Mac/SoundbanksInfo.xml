@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="150">
+	<RootPaths>
+		<ProjectRoot>../..</ProjectRoot>
+		<SourceFilesRoot>../../.cache/Mac</SourceFilesRoot>
+		<SoundBanksRoot>.</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>.</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{92B3FBC0-72B5-48D9-38BE-2DB0DFED109D}">
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<Plugins>
+				<AudioDevices>
+					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
+					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
+				</AudioDevices>
+			</Plugins>
+			<Busses>
+				<Bus Id="393239870" Name="SFX"/>
+				<Bus Id="3803692087" Name="Master Audio Bus"/>
+				<Bus Id="3991942870" Name="Music"/>
+			</Busses>
+		</SoundBank>
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{F966BB65-F6BD-3CA5-BF33-6279918639BB}">
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<Media>
+				<File Id="25363277" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sounds\Insert.wav</ShortName>
+					<CachePath>SFX/Sounds/Insert_818F3B66.wem</CachePath>
+				</File>
+				<File Id="54395538" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sounds\Drop (2).wav</ShortName>
+					<CachePath>SFX/Sounds/Drop (2)_818F3B66.wem</CachePath>
+				</File>
+				<File Id="82947770" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sounds\Music2.wav</ShortName>
+					<CachePath>SFX/Sounds/Music2_2BBB9D92.wem</CachePath>
+				</File>
+				<File Id="153483752" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sounds\Insert (2).wav</ShortName>
+					<CachePath>SFX/Sounds/Insert (2)_818F3B66.wem</CachePath>
+				</File>
+				<File Id="295848666" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sounds\Error.wav</ShortName>
+					<CachePath>SFX/Sounds/Error_818F3B66.wem</CachePath>
+				</File>
+				<File Id="437481821" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sounds\Win_SFX.wav</ShortName>
+					<CachePath>SFX/Sounds/Win_SFX_818F3B66.wem</CachePath>
+				</File>
+				<File Id="456478770" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sounds\Win_Clapping.wav</ShortName>
+					<CachePath>SFX/Sounds/Win_Clapping_3F676873.wem</CachePath>
+				</File>
+				<File Id="510737770" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sounds\Drop (3).wav</ShortName>
+					<CachePath>SFX/Sounds/Drop (3)_818F3B66.wem</CachePath>
+				</File>
+				<File Id="514100534" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sounds\Insert (4).wav</ShortName>
+					<CachePath>SFX/Sounds/Insert (4)_818F3B66.wem</CachePath>
+				</File>
+				<File Id="515277792" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sounds\Insert (1).wav</ShortName>
+					<CachePath>SFX/Sounds/Insert (1)_818F3B66.wem</CachePath>
+				</File>
+				<File Id="542882969" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sounds\Draw.wav</ShortName>
+					<CachePath>SFX/Sounds/Draw_818F3B66.wem</CachePath>
+				</File>
+				<File Id="639576867" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sounds\Insert (3).wav</ShortName>
+					<CachePath>SFX/Sounds/Insert (3)_818F3B66.wem</CachePath>
+				</File>
+				<File Id="705131878" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sounds\Music.wav</ShortName>
+					<CachePath>SFX/Sounds/Music_EAB7F5DF.wem</CachePath>
+				</File>
+				<File Id="740849803" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sounds\Error2.wav</ShortName>
+					<CachePath>SFX/Sounds/Error2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="765399761" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sounds\Win2.wav</ShortName>
+					<CachePath>SFX/Sounds/Win2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="869710975" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sounds\Drop (1).wav</ShortName>
+					<CachePath>SFX/Sounds/Drop (1)_818F3B66.wem</CachePath>
+				</File>
+				<File Id="1007169872" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sounds\Drop (4).wav</ShortName>
+					<CachePath>SFX/Sounds/Drop (4)_818F3B66.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3799428129" Name="DiskDrop" DurationType="OneShot" DurationMin="0.5466592" DurationMax="1.9342594">
+					<MediaRefs>
+						<MediaRef Id="25363277"/>
+						<MediaRef Id="54395538"/>
+						<MediaRef Id="153483752"/>
+						<MediaRef Id="510737770"/>
+						<MediaRef Id="514100534"/>
+						<MediaRef Id="515277792"/>
+						<MediaRef Id="639576867"/>
+						<MediaRef Id="869710975"/>
+						<MediaRef Id="1007169872"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1912241455" Name="Draw" DurationType="OneShot" DurationMin="1.8629792" DurationMax="1.8629792">
+					<MediaRefs>
+						<MediaRef Id="542882969"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3991942870" Name="Music" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="82947770"/>
+						<MediaRef Id="705131878"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2608104960" Name="NotClickable" DurationType="OneShot" DurationMin="0.26759776" DurationMax="0.45806772">
+					<MediaRefs>
+						<MediaRef Id="295848666"/>
+						<MediaRef Id="740849803"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="979765101" Name="Win" DurationType="OneShot" DurationMin="6.4565115" DurationMax="6.4565115">
+					<MediaRefs>
+						<MediaRef Id="437481821"/>
+						<MediaRef Id="456478770"/>
+						<MediaRef Id="765399761"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{824AF6AA-3252-23B0-518B-A95930991310}</FileHash>
+</SoundBanksInfo>
