@@ -3,8 +3,7 @@ public class TurnManager : Singletons<TurnManager>
 {
     [SerializeField] Player[] players;
     [HideInInspector]
-    public  Player currentPlayer;
-    // Start is called before the first frame update
+    public Player currentPlayer;
     private void Start()
     {
         ResetTurn();
