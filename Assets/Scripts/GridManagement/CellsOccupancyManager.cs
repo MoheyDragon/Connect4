@@ -3,11 +3,14 @@ public class CellsOccupancyManager : Singletons<CellsOccupancyManager>
 {
     Cell[,] cells;
     int rows, columns;
-    public void SetCellsData(Cell[,] cells,int rows,int columns)
+    public void SetCellsData(Cell[,] cells,int rows,int columns,int winningCount)
     {
         this.rows = rows;
         this.columns = columns;
         this.cells = cells;
+        this.winningCount = winningCount;
+        totalGridCellsCount = rows * columns;
+        fillGridCounter = 0;
         isGameActive = true;
     }
     bool isGameActive;
@@ -21,17 +24,23 @@ public class CellsOccupancyManager : Singletons<CellsOccupancyManager>
         }
 
     }
+    int fillGridCounter, totalGridCellsCount;
     private void AddDiskToCell(int x,int y)
     {
         Player currentPlayer = TurnManager.Singleton.currentPlayer;
         cells[x, y].InsertDisk(currentPlayer);
-        if (CheckWin(x,y,currentPlayer.Index))
+        fillGridCounter++;
+        if (fillGridCounter == totalGridCellsCount)
+        {
+            TurnManager.Singleton.Draw();
+        }
+        else if (CheckWin(x, y, currentPlayer.Index))
         {
             isGameActive = false;
-            print("Player "+ currentPlayer.Index + " Has Won");
+            TurnManager.Singleton.PlayerWon();
         }
         else
-            TurnManager.Singleton.EndTurn();
+            TurnManager.Singleton.NextTurn();
     }
     bool CheckIfColumnHasEmptyCells(int x, out int firstEmptyRow)
     {
@@ -49,9 +58,13 @@ public class CellsOccupancyManager : Singletons<CellsOccupancyManager>
 
     #region WinCalculations
 
-    [SerializeField] int winningCount;
-    [SerializeField] bool allowDiagonal;
+    int winningCount=4;
+    bool allowDiagonal=true;
     int[,] directions = { { 1, 0 }, { 0, 1 }, { 1, 1 }, { 1, -1 } };
+    public void AllowDiagonalChecking(bool allow)
+    {
+        allowDiagonal = allow;
+    }
     private bool CheckWin(int x, int y, int playerIndex)
     {
         int allowedDirections = allowDiagonal ? 4 : 2;

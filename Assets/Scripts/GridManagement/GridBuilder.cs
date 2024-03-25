@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
-public class GridBuilder : MonoBehaviour
+public class GridBuilder : Singletons<GridBuilder>
 {
     [SerializeField] GridLayoutGroup gridLayout;
     [SerializeField] Cell prefab;
@@ -9,7 +9,13 @@ public class GridBuilder : MonoBehaviour
     {
         GenerateGridAndOccupyCellsData();
     }
-    public void GenerateGridAndOccupyCellsData()
+    public void GenerateGridByUserValues(int rows,int columns,int winningCount)
+    {
+        this.rows = rows;
+        this.columns = columns;
+        GenerateGridAndOccupyCellsData(winningCount);
+    }
+    private void GenerateGridAndOccupyCellsData(int winningCount=4)
     {
         _DeletPreviousGrid();
 
@@ -25,7 +31,7 @@ public class GridBuilder : MonoBehaviour
                 newCell.SetupCell(j, i);
             }
         }
-        CellsOccupancyManager.Singleton.SetCellsData(cells, rows, columns);
+        CellsOccupancyManager.Singleton.SetCellsData(cells, rows, columns,winningCount);
     }
     private void _DeletPreviousGrid()
     {
